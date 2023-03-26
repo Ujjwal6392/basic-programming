@@ -1,0 +1,287 @@
+//*****************************************code for  full pyrmaid*****************************************
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int n;
+    cin>>n;
+    for(int row=0;row<n;row++)
+    {
+        for(int column=0;column<n-row-1;column++)
+        {
+            cout<<" ";
+        }
+        for(int column=0;column<row+1;column++)
+        {
+            cout<<"* ";
+        }cout<<endl;
+    }
+    
+    
+}
+
+
+
+
+
+//***************************************code for inverted full pyrmaid*************************************
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int n;
+    cin>>n;
+    for(int row=0;row<n;row++)
+    {
+        for(int column=0;column<row;column++)
+        {
+            cout<<" ";
+        }
+        for(int column=0;column<n-row;column++)
+        {
+            cout<<"* ";
+        }cout<<endl;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+//*************************************code for solid diamond***********************************************
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int n;
+    cin>>n;
+    
+    
+    for(int row=0;row<n;row++)
+    {
+        for(int column=0;column<n-row-1;column++)
+        {
+            cout<<" ";
+        }
+        for(int column=0;column<row+1;column++)
+        {
+            cout<<"* ";
+        }cout<<endl;
+    }
+    
+    
+    
+    for(int row=0;row<n;row++)
+    {
+        for(int column=0;column<row;column++)
+        {
+            cout<<" ";
+        }
+        for(int column=0;column<n-row;column++)
+        {
+            cout<<"* ";
+        }cout<<endl;
+    }
+    
+    
+}
+
+
+
+
+
+
+//******************************************code for hollow diamond******************************************************************
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int n;
+    cin>>n;
+    
+    
+    for(int row=0;row<n;row++)
+    {
+        for(int column=0;column<n-row-1;column++)
+        {
+            cout<<" ";
+        }
+        for(int column=0;column<(2*row)+1;column++)
+        {
+            if(column==0||column==2*row)
+            {
+                cout<<"*";
+            }
+            else
+            {
+                cout<<" ";
+            }
+        }cout<<endl;
+    }
+    
+    
+    
+    for(int row=0;row<n;row++)
+    {
+        for(int column=0;column<row;column++)
+        {
+            cout<<" ";
+        }
+        for(int column=0;column<(2*n)-(2*row)-1;column++)
+        {
+            if(column==0||column==(2*n)-(2*row)-2)
+            {
+                cout<<"*";
+            }
+            else
+            {
+                 cout<<" ";
+            }
+            
+        }cout<<endl;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+//**********************************code flipped solid diamond*********************************************
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int n;
+    cin>>n;
+    
+    
+    for(int row=0;row<n;row++)
+    {
+        
+            for(int column=0;column<n-row;column++)
+            {
+                cout<<"*";
+            }
+            for(int column=0;column<2*row+1;column++)
+            {
+                cout<<" ";
+            }
+            for(int column=row;column<n;column++)
+            {
+                cout<<"*";
+            }cout<<endl;
+        
+    }
+        for(int row=0;row<n;row++)
+        {
+            for(int column=0;column<row+1;column++)
+            {
+                cout<<"*";
+            }
+            for(int column=0;column<(2*n)-(2*row)-1;column++)
+            {
+                cout<<" ";
+            }
+            for(int column=0;column<row+1;column++)
+            {
+                cout<<"*";
+            }cout<<endl;
+        }
+    
+    
+}
+
+
+
+
+
+
+
+
+//**************code fancy pattern******************************************
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int n;
+    cin>>n;
+    
+    for(int row=0;row<n;row++)
+    {
+        for(int column=0;column<row+1;column++)
+        {
+            cout<<row+1;
+        
+           if(column!=row)
+           {
+            cout<<"*";
+           }
+        }cout<<endl;
+    }
+    for(int row=0;row<n;row++)
+    {
+        for(int column=0;column<n-row;column++)
+        {
+            cout<<n-row;
+        
+            if(column!=n-row-1)
+            {
+               cout<<"*";
+            }
+            
+        }cout<<endl;
+    }
+        
+
+}
+
+
+
+
+
+//****************************************code fancy pattern 2******************************
+
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+    int n;
+    cin>>n;
+    
+    for(int row=0;row<n;row++)
+    {
+        for(int column=0;column<row+1;column++)
+        {
+            int ans=column+1;
+            char ch=ans+'A'-1;
+            cout<<ch;
+        }
+        for(int column=row;column>0;column--)
+        {
+             int ans=column;
+             char ch=ans+'A'-1;
+            cout<<ch;
+        }cout<<endl;
+    }
+}
