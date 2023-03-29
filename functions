@@ -1,0 +1,112 @@
+#include <iostream>
+using namespace std;
+
+// *******************printing maximum of three number**********
+// int largenum(int num1,int num2,int num3)
+// {
+//     if(num1 >num2 && num1 > num3)
+//     {
+//         return num1;
+//     }
+//     else if(num2 > num3 && num 2 > num1)
+//     {
+//         return num2;
+//     }
+//     else 
+//     {
+//         return num3;
+//     }
+// }
+// int main()
+// {
+//     int a,b,c;
+//     cin>>a;
+//     cin>>b;
+//     cin>>c;
+//     int maximumnum=largenum(a,b,c);
+//     cout<<"Maximum number is "<<maximumnum;
+// }
+
+// ************************************printing n number****************
+// void printcounting(int a)
+// {
+//     for(int i=1;i<=a;i++)
+//     {
+//         cout<<i;
+//     }
+// }
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     printcounting(n);
+    
+    
+//     return 0;
+// } 
+// ***************student grade system************************
+// char getgrade(int marks)
+// {
+//     if(marks>=90)
+//     {
+//         return 'A';
+//     }
+//     else if(marks>=80)
+//     {
+//         return 'B';
+//     }
+//     else if(marks>=70)
+//     {
+//         return 'C';
+//     }
+//     else
+//     {
+//         return 'D';
+//     }
+// }
+// int main()
+// {
+//     int marks;
+//     cin>>marks;
+//     char finalgrade=getgrade(marks);
+//     cout<<finalgrade<<endl;
+// }
+    
+//*********************************student grade system using switch*********
+// char getgrade(int marks)
+// {
+//     switch(marks/10)
+//     {
+//         case 10:return 'A';break;
+//         case 9: return 'A';break;
+//         case 8: return 'B';break;
+//         case 7: return 'C';break;
+//         case 6: return 'D';break;
+//         default :return 'E';break;
+//     }
+// }
+// int main()
+// {
+//     int marks;
+//     cin>>marks;
+//     char finalgrade=getgrade(marks);
+//     cout<<finalgrade<<endl;
+// }
+
+// *******************summing given n numbers**********************
+// int getsum(int n)
+// {
+//     int sum=0;
+//     for(int i=1;i<=n;i++)
+//     {
+//         sum=sum+i;
+//     }
+//     return sum;
+// }
+// int main()
+// {
+//     int n;
+//     cin>>n;
+//     int finalsum=getsum(n);
+//     cout<<"sum of given "<<n<<" numbers is "<<finalsum;
+// }
