@@ -1,0 +1,114 @@
+//*****************area of circlr*******************
+
+
+#include <iostream>
+using namespace std;
+
+float getradius(int r)
+{
+    float area=2*3.14*r;
+    return area;
+}
+int main() {
+    int r;
+    cin>>r;
+    float finalradius=getradius(r);
+    cout<<"Area of given circle of radius "<<r<<" is "<<finalradius<<endl;
+    return 0;
+}
+//**********************factorial*************************
+int getfactorial(int n)
+{
+    int factorial=1;
+    for(int i=1;i<=n;i++)
+    {
+        factorial=factorial*i;
+    }
+    return factorial;
+}
+int main()
+{
+    int n;
+    cin>>n;
+    int factorial=getfactorial(n);
+    cout<<"Factorial of given number "<<n<<" is "<<factorial<<endl;
+}
+//****************************prime or not ********************************
+int getprime(int n)
+{
+    int count=0;
+    for(int i=1;i<=n;i++)
+    {
+        if(n%i==0)
+        {
+            count++;
+        }
+    }
+    return count;
+        
+    
+}
+int main()
+{
+    int n;
+    cin>>n;
+    int prime=getprime(n);
+    if(prime==2)
+    {
+        cout<<n<<" is prime "<<endl;
+    }
+    else 
+    {
+        cout<<n<<" is not prime ";
+    }
+}
+//************************prime number in between 1 to n********************************
+int getprime(int i)
+{
+    int count=0;
+    for(int j=1;j<=i;j++)
+    {
+        if(i%j==0)
+        {
+            count++;
+        }
+    }
+    return count;
+    
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        int prime=getprime(i);
+        if(prime==2)
+        {
+            cout<<i<<" ";
+        }
+        
+        
+    }
+}
+//********************even or odd*************************************
+void gettype(int n)
+{
+    if(n%2==0)
+    {
+        cout<<n<<" is even number";
+    }
+    else
+    {
+        cout<<n<<" is odd number";
+    }
+}
+
+int main()
+{
+    int n;
+    cin>>n;
+    gettype(n);
+}
+
